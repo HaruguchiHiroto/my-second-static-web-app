@@ -19,9 +19,8 @@
     },
     "host": {
       "cors": {
-        "origins": [],
-        "allow-credentials": false,
-        "mode":"production"
+        "origins": ["http://localhost:4280"],
+        "allow-credentials": false
       },
       "authentication": {
         "provider": "StaticWebApps"
