@@ -36,6 +36,23 @@
       console.table(result.value);
     } 
 
+    async function update() {
+
+      const id = 1;
+      const data = {
+        Name: "Molly"
+      };
+
+      const endpoint = '/data-api/rest/Person/Id';
+      const response = await fetch(`${endpoint}/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+      const result = await response.json();
+      console.table(result.value);
+    }
+
 
   </script>
 
