@@ -29,14 +29,14 @@
     }
 
     async function get() {
-      const id = 1;
+      const id = 2;
       const endpoint = `/data-api/rest/Person/Id`;
       const response = await fetch(`${endpoint}/${id}`);
       const result = await response.json();
       console.table(result.value);
     } 
 
-    
+
   </script>
 
 </body>
